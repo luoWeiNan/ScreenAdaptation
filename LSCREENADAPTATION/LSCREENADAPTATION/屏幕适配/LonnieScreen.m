@@ -35,35 +35,35 @@ CGFloat const SCREEN_HEIGHT_iPhoneX             = 812.0f;
 /*重载方法*/
 - (instancetype)init{
     if (self = [super init]) {
-        self.defaultType=TXAdapterPhoneType_iPhone5_5C_5S_5SE;
+        self.defaultType=AdapterPhoneType_iPhone5_5C_5S_5SE;
     }
     return self;
 }
 /*设置默认类型*/
-- (void)setDefaultType:(TXAdapterPhoneType)defaultType {
+- (void)setDefaultType:(AdapterPhoneType)defaultType {
     _defaultType = defaultType;
     switch (_defaultType) {
-        case TXAdapterPhoneType_iPhone3GS_4_4S:
+        case AdapterPhoneType_iPhone3GS_4_4S:
             _defaultScreenWidth  = SCREEN_WIDTH_iPhone3GS_4_4S;
             _defaultScreenHeight = SCREEN_HEIGHT_iPhone3GS_4_4S;
             break;
-        case TXAdapterPhoneType_iPhone5_5C_5S_5SE:
+        case AdapterPhoneType_iPhone5_5C_5S_5SE:
             _defaultScreenWidth  = SCREEN_WIDTH_iPhone5_5C_5S_5SE;
             _defaultScreenHeight = SCREEN_HEIGHT_iPhone5_5C_5S_5SE;
             break;
-        case TXAdapterPhoneType_iPhone6_6S_7_8:
+        case AdapterPhoneType_iPhone6_6S_7_8:
             _defaultScreenWidth  = SCREEN_WIDTH_iPhone6_6S_7_8;
             _defaultScreenHeight = SCREEN_HEIGHT_iPhone6_6S_7_8;
             break;
-        case TXAdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus:
+        case AdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus:
             _defaultScreenWidth  = SCREEN_WIDTH_iPhone6Plus_6SPlus_7Plus_8Plus;
             _defaultScreenHeight = SCREEN_HEIGHT_iPhone6Plus_6SPlus_7Plus_8Plus;
             break;
-        case TXAdapterPhoneType_iPhoneX:
+        case AdapterPhoneType_iPhoneX:
             _defaultScreenWidth  = SCREEN_WIDTH_iPhoneX;
             _defaultScreenHeight = SCREEN_HEIGHT_iPhoneX;
             break;
-        case TXAdapterPhoneTypeOther:
+        case AdapterPhoneTypeOther:
             break;
         default:
             break;

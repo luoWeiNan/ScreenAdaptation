@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 
 /*适配手机类型*/
-typedef NS_ENUM(NSInteger,TXAdapterPhoneType) {
-    TXAdapterPhoneType_iPhone3GS_4_4S    = 0,
-    TXAdapterPhoneType_iPhone5_5C_5S_5SE = 1,
-    TXAdapterPhoneType_iPhone6_6S_7_8    = 2,
-    TXAdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus = 3,
-    TXAdapterPhoneType_iPhoneX           = 4,
-    TXAdapterPhoneTypeOther              = 5
+typedef NS_ENUM(NSInteger,AdapterPhoneType) {
+    AdapterPhoneType_iPhone3GS_4_4S    = 0,
+    AdapterPhoneType_iPhone5_5C_5S_5SE = 1,
+    AdapterPhoneType_iPhone6_6S_7_8    = 2,
+    AdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus = 3,
+    AdapterPhoneType_iPhoneX           = 4,
+    AdapterPhoneTypeOther              = 5
 };
 
 /*所需适配机型-屏幕宽*/
@@ -42,18 +42,18 @@ static inline CGFloat tScreenHeight() {
 }
 
 /*当前屏幕类型*/
-static inline TXAdapterPhoneType tCurrentType() {
-    if (tScreenHeight() == SCREEN_HEIGHT_iPhone3GS_4_4S) return TXAdapterPhoneType_iPhone3GS_4_4S;
-    if (tScreenHeight() == SCREEN_HEIGHT_iPhone5_5C_5S_5SE) return TXAdapterPhoneType_iPhone5_5C_5S_5SE;
-    if (tScreenHeight() == SCREEN_HEIGHT_iPhone6_6S_7_8) return TXAdapterPhoneType_iPhone6_6S_7_8;
-    if (tScreenHeight() == SCREEN_HEIGHT_iPhone6Plus_6SPlus_7Plus_8Plus) return TXAdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus;
-    if (tScreenHeight() == SCREEN_HEIGHT_iPhoneX) return TXAdapterPhoneType_iPhoneX;
-    return TXAdapterPhoneTypeOther;
+static inline AdapterPhoneType tCurrentType() {
+    if (tScreenHeight() == SCREEN_HEIGHT_iPhone3GS_4_4S) return AdapterPhoneType_iPhone3GS_4_4S;
+    if (tScreenHeight() == SCREEN_HEIGHT_iPhone5_5C_5S_5SE) return AdapterPhoneType_iPhone5_5C_5S_5SE;
+    if (tScreenHeight() == SCREEN_HEIGHT_iPhone6_6S_7_8) return AdapterPhoneType_iPhone6_6S_7_8;
+    if (tScreenHeight() == SCREEN_HEIGHT_iPhone6Plus_6SPlus_7Plus_8Plus) return AdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus;
+    if (tScreenHeight() == SCREEN_HEIGHT_iPhoneX) return AdapterPhoneType_iPhoneX;
+    return AdapterPhoneTypeOther;
 }
 
 @interface LonnieScreen : NSObject
 /*屏幕适配参考类型 默认为TXAdapterPhoneType_iPhone5*/
-@property(nonatomic)TXAdapterPhoneType defaultType;
+@property(nonatomic)AdapterPhoneType defaultType;
 @property(nonatomic,readonly)CGFloat defaultScreenWidth;
 @property(nonatomic,readonly)CGFloat defaultScreenHeight;
 /*共享*/

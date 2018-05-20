@@ -22,22 +22,22 @@
     [self.view addSubview:view];
     NSLog(@"当前设备");
     switch (tCurrentType()) {
-        case TXAdapterPhoneType_iPhone3GS_4_4S:
+        case AdapterPhoneType_iPhone3GS_4_4S:
             NSLog(@"TXAdapterPhoneType_iPhone3GS_4_4S");
             break;
-        case TXAdapterPhoneType_iPhone5_5C_5S_5SE:
+        case AdapterPhoneType_iPhone5_5C_5S_5SE:
             NSLog(@"TXAdapterPhoneType_iPhone5_5C_5S_5SE");
             break;
-        case TXAdapterPhoneType_iPhone6_6S_7_8:
+        case AdapterPhoneType_iPhone6_6S_7_8:
             NSLog(@"TXAdapterPhoneType_iPhone6_6S_7_8");
             break;
-        case TXAdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus:
+        case AdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus:
             NSLog(@"TXAdapterPhoneType_iPhone6Plus_6SPlus_7Plus_8Plus");
             break;
-        case TXAdapterPhoneType_iPhoneX:
+        case AdapterPhoneType_iPhoneX:
             NSLog(@"TXAdapterPhoneType_iPhoneX");
             break;
-        case TXAdapterPhoneTypeOther:
+        case AdapterPhoneTypeOther:
             break;
         default:
             break;
