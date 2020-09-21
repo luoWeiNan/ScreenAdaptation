@@ -15,7 +15,7 @@
 		38325CDE20B06CA900FC2774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38325CDD20B06CA900FC2774 /* main.m */; };
 		38325CE820B06CA900FC2774 /* LSCREENADAPTATIONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38325CE720B06CA900FC2774 /* LSCREENADAPTATIONTests.m */; };
 		38325CF320B06CA900FC2774 /* LSCREENADAPTATIONUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38325CF220B06CA900FC2774 /* LSCREENADAPTATIONUITests.m */; };
-		38325D0320B06CF500FC2774 /* LonnieScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 38325D0220B06CF500FC2774 /* LonnieScreen.m */; };
+		AE9D9AD025191D8C009DA9D4 /* LonnieScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9D9ACE25191D8C009DA9D4 /* LonnieScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		38325CEE20B06CA900FC2774 /* LSCREENADAPTATIONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSCREENADAPTATIONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38325CF220B06CA900FC2774 /* LSCREENADAPTATIONUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSCREENADAPTATIONUITests.m; sourceTree = "<group>"; };
 		38325CF420B06CA900FC2774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38325D0120B06CF500FC2774 /* LonnieScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LonnieScreen.h; sourceTree = "<group>"; };
-		38325D0220B06CF500FC2774 /* LonnieScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LonnieScreen.m; sourceTree = "<group>"; };
+		AE9D9ACE25191D8C009DA9D4 /* LonnieScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonnieScreen.m; sourceTree = "<group>"; };
+		AE9D9ACF25191D8C009DA9D4 /* LonnieScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonnieScreen.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		38325CCD20B06CA900FC2774 /* LSCREENADAPTATION */ = {
 			isa = PBXGroup;
 			children = (
-				38325D0020B06CBD00FC2774 /* 屏幕适配 */,
+				AE9D9ACD25191D8C009DA9D4 /* LonnieScreen */,
 				38325CCE20B06CA900FC2774 /* AppDelegate.h */,
 				38325CCF20B06CA900FC2774 /* AppDelegate.m */,
 				38325CD120B06CA900FC2774 /* ViewController.h */,
@@ -136,13 +136,13 @@
 			path = LSCREENADAPTATIONUITests;
 			sourceTree = "<group>";
 		};
-		38325D0020B06CBD00FC2774 /* 屏幕适配 */ = {
+		AE9D9ACD25191D8C009DA9D4 /* LonnieScreen */ = {
 			isa = PBXGroup;
 			children = (
-				38325D0120B06CF500FC2774 /* LonnieScreen.h */,
-				38325D0220B06CF500FC2774 /* LonnieScreen.m */,
+				AE9D9ACE25191D8C009DA9D4 /* LonnieScreen.m */,
+				AE9D9ACF25191D8C009DA9D4 /* LonnieScreen.h */,
 			);
-			path = "屏幕适配";
+			path = LonnieScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +280,7 @@
 			files = (
 				38325CD320B06CA900FC2774 /* ViewController.m in Sources */,
 				38325CDE20B06CA900FC2774 /* main.m in Sources */,
-				38325D0320B06CF500FC2774 /* LonnieScreen.m in Sources */,
+				AE9D9AD025191D8C009DA9D4 /* LonnieScreen.m in Sources */,
 				38325CD020B06CA900FC2774 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
